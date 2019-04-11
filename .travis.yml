@@ -5,3 +5,4 @@ script: mvn clean verify
 deploy:
   provider: heroku
   api_key: 59fd3835-5e8f-4876-b3e5-df9776825ba9
+  app: glacial-mountain-94858
