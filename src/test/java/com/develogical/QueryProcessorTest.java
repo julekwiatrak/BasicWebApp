@@ -30,5 +30,10 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("what is your name"), containsString("j2"));
     }
 
+    @Test
+    public void numPlusNumPositive() throws Exception {
+        assertThat(queryProcessor.process("8224b340: what is 5 plus 12"), containsString("17"));
+    }
+
     //PushTest3
 }
