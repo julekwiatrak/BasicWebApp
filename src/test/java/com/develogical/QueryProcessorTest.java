@@ -25,5 +25,10 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }
 
+    @Test
+    public void knowsAboutName() throws Exception {
+        assertThat(queryProcessor.process("what is your name"), containsString("j2"));
+    }
+
     //PushTest3
 }
